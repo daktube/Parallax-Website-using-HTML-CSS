@@ -1,0 +1,90 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: darkviolet;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    /* fixed=parallax, scroll=normal */
+
+}
+
+.pimg1 {
+    background-image: url(../P2/img/city1.jpg);
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url(../P2/img/city2.jpg);
+    min-height: 500px;
+}
+
+.pimg3 {
+    background-image: url(../P2/img/city3.jpg);
+    min-height: 400px;
+}
+
+.section {
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.section p {
+    text-align: justify;
+}
+
+.section-light {
+    background-color: bisque;
+    color: brown;
+}
+
+.section-dark {
+    background-color: rgb(185, 157, 157);
+    color: rgb(114, 48, 48);
+}
+
+.section-third {
+    background-color: rgb(47, 95, 79);
+    color: rgb(9, 193, 131);
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration: underline white
+}
+
+.ptext .border {
+    background-color: black;
+    color: azure;
+    padding: 25px;
+}
+
+@media(max-width:500px) {
+
+    .pimg1,
+    .pimg2,
+    .pimg3 {
+        background-attachment: scroll;
+    }
+}
